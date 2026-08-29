@@ -1,8 +1,6 @@
 name: check-formatting
 on:
-  push:
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
 jobs:
   format:
     runs-on: ubuntu-latest

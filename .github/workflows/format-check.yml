@@ -2,7 +2,7 @@ name: check-formatting
 on:
   push:
   pull_request:
-    branches: [master]
+    branches: [main]
 jobs:
   format:
     runs-on: ubuntu-latest

@@ -33,11 +33,11 @@ class Clim
             case default_value
             when Nil
               "nil"
-            when {{*support_types_bool}}
+            when {{support_types_bool.splat}}
               default_value
-            when {{*support_types_string}}
+            when {{support_types_string.splat}}
               default_value.empty? ? "\"\"" : "\"#{default_value}\""
-            when {{*support_types_number}}
+            when {{support_types_number.splat}}
               default_value
             else
               raise ClimException.new "[#{typeof(default)}] is not supported."

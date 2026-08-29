@@ -1,8 +1,6 @@
 name: completion
 on:
-  push:
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
 jobs:
   completion-spec:
     runs-on: ubuntu-latest
